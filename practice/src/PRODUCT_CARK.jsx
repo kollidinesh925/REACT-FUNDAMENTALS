@@ -1,16 +1,10 @@
 function PRODUCT_CART(Product) {
     return (
-        <div className="box">
-            <div className="c1">
+        <div>
                 <p>PRODUCT_NAME : {Product.product_name}</p>
-            </div>
-            <div className="c2">
                 <p>PRICE : {Product.price}</p>
-            </div>
-            <div className="c3">
-                <p>{Product.isavailable === true ?  <p className="in"> IN STOCK </p>: <p className="out"> OUT STOCK</p>}</p>
-            </div>
-        </div>
+                <p>{Product.isavailable === true ? "IN STOCK:OUT STOCK"}</p>
+     </div>     
     )
 }
 export default PRODUCT_CART 
